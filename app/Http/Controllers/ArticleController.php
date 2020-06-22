@@ -7,15 +7,17 @@ use App\Article;
 
 class ArticleController extends Controller
 {
-    public function index($token)
+    public function index()
     {
-        if(config('app.API_TOKEN') == $token){
-            return Article::all();
-        }else{
-            return response()->json([
-                'data' => 'Unauthorized access'
-            ], 401);
-        }
+        return Article::all();
+
+        // if(config('app.API_TOKEN') == $token){
+        //     return Article::all();
+        // }else{
+        //     return response()->json([
+        //         'data' => 'Unauthorized access'
+        //     ], 401);
+        // }
     }
 
     public function show(Article $article)
@@ -31,7 +33,7 @@ class ArticleController extends Controller
     {
         dd("bonjour");
     }
-    
+
     public function store(Request $request)
     {
         return response()->json("salut");
