@@ -123,7 +123,6 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-    'key' => env('APP_KEY', '123456lecentre'),
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
