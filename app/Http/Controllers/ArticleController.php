@@ -25,15 +25,6 @@ class ArticleController extends Controller
         return $article;
     }
 
-    public function test()
-    {
-        dd("test");
-    }
-    public function bonjour()
-    {
-        dd("bonjour");
-    }
-
     public function store(Request $request)
     {
         return response()->json("salut");

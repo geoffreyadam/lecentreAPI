@@ -19,9 +19,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('articles/{token}', 'ArticleController@index');
-Route::get('postArticle/{token}', 'ArticleController@store');
-Route::get('articles/{article}', 'ArticleController@show');
-// Route::post('articles', 'ArticleController@store');
-Route::put('articles/{article}', 'ArticleController@update');
-Route::delete('articles/{article}', 'ArticleController@delete');
+Route::get('evenements/{token}', 'BackOffice\EvenementController@apiGetAll');
+
+
+
+// Route::get('articles/{token}', 'ArticleController@index');
+// Route::get('postArticle/{token}', 'ArticleController@store');
+// Route::get('articles/{article}', 'ArticleController@show');
+// // Route::post('articles', 'ArticleController@store');
+// Route::put('articles/{article}', 'ArticleController@update');
+// Route::delete('articles/{article}', 'ArticleController@delete');a
+
