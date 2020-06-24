@@ -18,4 +18,4 @@ Route::get('/backOffice/evenements', 'BackOffice\EvenementController@index');
 Route::get('/backOffice/add/evenement', 'BackOffice\EvenementController@addIndex');
 Route::get('/backOffice/update/evenement/{id}', 'BackOffice\EvenementController@updateIndex');
 Route::post('/backOffice/updateFunction/evenement/{id}', 'BackOffice\EvenementController@update');
-Route::post('/backOffice/addFunction/evenement/{id}', 'BackOffice\EvenementController@add');
+Route::post('/backOffice/addFunction/evenement', 'BackOffice\EvenementController@add');
