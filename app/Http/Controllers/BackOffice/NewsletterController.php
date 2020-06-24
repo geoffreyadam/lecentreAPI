@@ -15,14 +15,12 @@ class NewsletterController extends Controller
     }
     public function add(Request $request)
     {
-        return "hey";
-
         $input = $request->all();
         return $input;
-        $newsletter = Newsletter::create([
-            'email' => $input["data"]["email"],
-        ]);
-        return $newsletter;
+        // $newsletter = Newsletter::create([
+        //     'email' => $input["data"]["email"],
+        // ]);
+        // return $newsletter;
     }
     // public function addIndex()
     // {
