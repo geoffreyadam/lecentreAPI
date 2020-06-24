@@ -18,10 +18,10 @@ class ContactsController extends Controller
     {
         $input = $request->all();
         $evenement = Contact::create([
-            'titre' => $input["contact1"],
-            'description' => $input["contact2"],
-            'date' => $input["contact3"],
-            'lieu' => $input["contact4"]
+            'nom' => $input["contact1"],
+            'prenom' => $input["contact2"],
+            'email' => $input["contact3"],
+            'message' => $input["contact4"]
         ]);
         return $request;
     }
