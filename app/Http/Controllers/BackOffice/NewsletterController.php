@@ -11,12 +11,13 @@ class NewsletterController extends Controller
     public function index()
     {
         $data["newsletter"] = Newsletter::all();
+        dump($data['newsletter']);
         return view('backOffice/newsletter/index', $data);
     }
     public function add(Request $request)
     {
         return "hey";
-        
+
         $input = $request->all();
         return $input;
         $newsletter = Newsletter::create([
