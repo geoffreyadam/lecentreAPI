@@ -19,18 +19,14 @@ class EvenementController extends Controller
     public function add(Request $request)
     {
         $input = $request->all();
-        // dump($input['titre']);
-        // die;
         $evenement = Evenement::create([
-            'titre' => "test",
-            'description' => "ici",
+            'titre' => $input["titre"],
+            'description' => $input["description"],
             'date' => $input["date"],
             'lieu' => $input["lieu"],
             'type' => $input["type"],
             'fini' => $input["fini"]
         ]);
-        // $evenement = Evenement::create($request->all());
-        dd($evenement);
-        // return response()->json($article, 201);
+        dd($input["fini"]);
     }
 }

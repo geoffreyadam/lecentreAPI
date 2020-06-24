@@ -22,7 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('evenements/{token}', 'BackOffice\EvenementController@apiGetAll');
 
 
-
 // Route::get('articles/{token}', 'ArticleController@index');
 // Route::get('postArticle/{token}', 'ArticleController@store');
 // Route::get('articles/{article}', 'ArticleController@show');
