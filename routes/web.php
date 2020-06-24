@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'ArticleController@index');
-Route::get('public/test', 'ArticleController@test');
-Route::get('bonjour', 'ArticleController@bonjour');
-
 Route::get('/backOffice', 'BackOffice\AdminController@index');
 Route::get('/backOffice/evenements', 'BackOffice\EvenementController@index');
-Route::post('/backOffice/add/evenements', 'BackOffice\EvenementController@add');
+Route::get('/backOffice/add/evenement', 'BackOffice\EvenementController@addIndex');
+Route::get('/backOffice/update/evenement/{id}', 'BackOffice\EvenementController@updateIndex');
+Route::post('/backOffice/updateFunction/evenement/{id}', 'BackOffice\EvenementController@update');
+Route::post('/backOffice/addFunction/evenement/{id}', 'BackOffice\EvenementController@add');

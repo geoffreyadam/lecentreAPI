@@ -10,10 +10,6 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return view('backOffice/index', ['name' => 'James']);
-    }
-    public function evenementsIndex()
-    {
-        return view('backOffice/index', ['name' => 'James']);
+        return view('backOffice/index');
     }
 }
