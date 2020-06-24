@@ -12,17 +12,14 @@
                 </tr>
             </thead>
             <tbody>
-                {{-- @foreach ($evenements as $evenement)
+                @foreach ($contacts as $contact)
                     <tr>
-                        <td>{{$evenement->titre}}</td>
-                        <td>{{$evenement->description}}</td>
-                        <td>{{$evenement->date}}</td>
-                        <td>{{$evenement->lieu}}</td>
-                        <td>{{$evenement->type}}</td>
-                        <td>{{$evenement->fini}}</td>
-                        <td><a href="/backOffice/update/evenement/{{$evenement->id}}" class="btn btn-primary">Éditer</a></td>
+                        <td>{{$contact->nom}}</td>
+                        <td>{{$contact->prenom}}</td>
+                        <td>{{$contact->email}}</td>
+                        <td>{{$contact->message}}</td>
                     </tr>
-                @endforeach --}}
+                @endforeach
             </tbody>
         </table>
     </div>

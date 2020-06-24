@@ -23,6 +23,8 @@ Route::get('evenements/{token}', 'BackOffice\EvenementController@apiGetAll');
 
 Route::post('addContact/{token}', 'BackOffice\ContactsController@add');
 
+Route::post('addNewsletter/{token}', 'BackOffice\newsLetterController@add');
+
 
 // Route::get('articles/{token}', 'ArticleController@index');
 // Route::get('postArticle/{token}', 'ArticleController@store');

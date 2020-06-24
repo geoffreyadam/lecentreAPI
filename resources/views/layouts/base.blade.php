@@ -48,7 +48,7 @@
                     <a class="nav-link" href="/backOffice">Accueil</a>
                     <a class="nav-link" href="/backOffice/evenements">Evenements</a>
                     <a class="nav-link" href="/backOffice/contacts">Contacts</a>
-                    <a class="nav-link" href="/backOffice">Newsletters</a>
+                    <a class="nav-link" href="/backOffice/newsletter">Newsletters</a>
                 </div>
                 <div class="display_content">
                     <section class="back_office_title bg-light">

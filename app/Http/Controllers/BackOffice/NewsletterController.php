@@ -4,25 +4,22 @@ namespace App\Http\Controllers\BackOffice;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Contact;
+use App\Newsletter;
 
-class ContactsController extends Controller
+class NewsletterController extends Controller
 {
     public function index()
     {
-        $data["contacts"] = Contact::all();
-        return view('backOffice/contacts/index', $data);
+        $data["newsletter"] = Newsletter::all();
+        return view('backOffice/newsletter/index', $data);
     }
     public function add(Request $request)
     {
         $input = $request->all();
-        $contact = Contact::create([
-            'nom' => $input["data"]["contact1"],
-            'prenom' => $input["data"]["contact2"],
-            'email' => $input["data"]["contact3"],
-            'message' => $input["data"]["contact4"]
+        $newsletter = Newsletter::create([
+            'email' => $input["data"]["email"],
         ]);
-        return $contact;
+        return $newsletter;
     }
     // public function addIndex()
     // {
