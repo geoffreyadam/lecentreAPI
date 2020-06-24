@@ -17,13 +17,13 @@ class ContactsController extends Controller
     public function add(Request $request)
     {
         $input = $request->all();
-        $evenement = Contact::create([
-            'nom' => $input["contact1"],
-            'prenom' => $input["contact2"],
-            'email' => $input["contact3"],
-            'message' => $input["contact4"]
+        $contact = Contact::create([
+            'nom' => $input["data"]["contact1"],
+            'prenom' => $input["data"]["contact2"],
+            'email' => $input["data"]["contact3"],
+            'message' => $input["data"]["contact4"]
         ]);
-        return $request;
+        return $contact;
     }
     // public function addIndex()
     // {
