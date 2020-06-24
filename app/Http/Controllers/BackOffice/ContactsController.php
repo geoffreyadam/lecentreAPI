@@ -10,7 +10,8 @@ class ContactsController extends Controller
 {
     public function index()
     {
-        $data["evenements"] = Evenement::all();
+        $data["contacts"] = Contact::all();
+        dd($data["contacts"]);
         return view('backOffice/contacts/index', $data);
     }
     public function add(Request $request)
