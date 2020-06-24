@@ -15,6 +15,8 @@ class NewsletterController extends Controller
     }
     public function add(Request $request)
     {
+        return "hey";
+        
         $input = $request->all();
         return $input;
         $newsletter = Newsletter::create([
