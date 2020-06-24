@@ -16,6 +16,13 @@ class ContactsController extends Controller
     }
     public function add(Request $request)
     {
+        $input = $request->all();
+        $evenement = Contact::create([
+            'titre' => $input["contact1"],
+            'description' => $input["contact2"],
+            'date' => $input["contact3"],
+            'lieu' => $input["contact4"]
+        ]);
         return $request;
     }
     // public function addIndex()
