@@ -16,7 +16,7 @@ class NewsletterController extends Controller
     public function add(Request $request)
     {
         $input = $request->all();
-        return $input;
+        return $input["email"];
         // $newsletter = Newsletter::create([
         //     'email' => $input["data"]["email"],
         // ]);
