@@ -8,6 +8,9 @@ use App\Infos;
 
 class InfosController extends Controller
 {
+    public function apiGetAll(){
+        return Infos::all();
+    }
     public function index()
     {
         $data["infos"] = Infos::all();
