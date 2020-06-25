@@ -27,6 +27,8 @@ Route::post('addNewsletter/{token}', 'BackOffice\NewsletterController@add');
 
 Route::get('infos/{token}', 'BackOffice\InfosController@apiGetAll');
 
+Route::get('tarifs/{token}', 'BackOffice\TarifsController@apiGetAll');
+
 // Route::get('articles/{token}', 'ArticleController@index');
 // Route::get('postArticle/{token}', 'ArticleController@store');
 // Route::get('articles/{article}', 'ArticleController@show');
