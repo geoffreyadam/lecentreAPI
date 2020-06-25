@@ -2,7 +2,7 @@
 @section('title', 'Infos')
 @section('content')
     <div class="content">
-        <a href="/backOffice/add/infos" class="btn btn-primary">Ajouter des infos</a>
+        {{-- <a href="/backOffice/add/infos" class="btn btn-primary">Ajouter des infos</a> --}}
             <table class="table">
                 <thead>
                     <tr>
