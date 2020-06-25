@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title', 'Ajouter un evenement')
+@section('title', 'Ajouter des infos')
 @section('content')
     <form method="POST" action="/backOffice/addFunction/infos">
         @csrf
@@ -33,6 +33,6 @@
             <label for="exampleInputEmail1">Réouverture</label>
             <input type="text" class="form-control" placeholder="Réouverture en octobre 2020" name="reouverture">
         </div>
-        <button type="submit" class="btn btn-primary">Ajouter les infos</button>
+        <button type="submit" class="btn btn-primary">Ajouter un tarif</button>
       </form>
 @endsection

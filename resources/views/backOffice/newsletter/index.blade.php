@@ -2,6 +2,8 @@
 @section('title', 'Evenements')
 @section('content')
     <div class="content">
+        <a href="/backOffice/newsletter/export" class="btn btn-primary">Exporter</a>
+        <h2>Total : {{ $newsletter->count() }}</h2>
         <table class="table">
             <thead>
                 <tr>
