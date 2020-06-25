@@ -47,6 +47,7 @@
                 <div class="nav flex-column nav-pills bg-light">
                     <a class="nav-link" href="/backOffice">Accueil</a>
                     <a class="nav-link" href="/backOffice/evenements">Evenements</a>
+                    <a class="nav-link" href="/backOffice/infos">Infos</a>
                     <a class="nav-link" href="/backOffice/contacts">Contacts</a>
                     <a class="nav-link" href="/backOffice/newsletter">Newsletters</a>
                 </div>

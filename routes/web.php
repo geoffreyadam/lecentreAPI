@@ -22,3 +22,8 @@ Route::post('/backOffice/addFunction/evenement', 'BackOffice\EvenementController
 
 Route::get('/backOffice/contacts/', 'BackOffice\ContactsController@index');
 Route::get('/backOffice/newsletter/', 'BackOffice\NewsletterController@index');
+Route::get('/backOffice/infos/', 'BackOffice\InfosController@index');
+Route::get('/backOffice/add/infos', 'BackOffice\InfosController@addIndex');
+Route::get('/backOffice/update/infos/{id}', 'BackOffice\InfosController@updateIndex');
+Route::post('/backOffice/updateFunction/infos/{id}', 'BackOffice\InfosController@update');
+Route::post('/backOffice/addFunction/infos', 'BackOffice\InfosController@add');
