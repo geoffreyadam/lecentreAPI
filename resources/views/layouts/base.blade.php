@@ -11,6 +11,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <style>
+            body{
+                background-color: #F0F0F0;
+            }
             .back_office{
                 display: flex;
                 width: 100%;
@@ -38,13 +41,28 @@
             .back_office_content{
                 padding: 25px;
             }
+            .left_menu{
+                background-color: #1A1B21;
+                padding-left: 10px;
+            }
+            .left_menu a{
+                color: #fff;
+                margin: 5px 0;
+            }
+            button{
+                border-radius: 3px !important;
+                background-color: #0285F5 !important;
+            }
+            .top_content{
+                background: #fff;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="back_office">
                 @section('sidebar')
-                <div class="nav flex-column nav-pills bg-light">
+                <div class="nav flex-column nav-pills left_menu">
                     <a class="nav-link" href="/backOffice">Accueil</a>
                     <a class="nav-link" href="/backOffice/evenements">Evenements</a>
                     <a class="nav-link" href="/backOffice/infos">Infos</a>
@@ -54,7 +72,7 @@
                     <a class="nav-link" href="/backOffice/newsletter">Newsletters</a>
                 </div>
                 <div class="display_content">
-                    <section class="back_office_title bg-light">
+                    <section class="back_office_title top_content">
                         <h2>@yield('title')</h2>
                     </section>
                     <section class="back_office_content">
