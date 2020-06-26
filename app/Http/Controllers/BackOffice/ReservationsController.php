@@ -51,7 +51,7 @@ class ReservationsController extends Controller
     public function add(Request $request)
     {
         $input = $request->all();
-        $reservation = Reservations::create([
+        Reservations::create([
             'totalBillets' => $input["data"]["totalBillets"],
             'totalPrice' => $input["data"]["totalPrice"],
             'date' => $input["data"]["date"],
@@ -63,6 +63,5 @@ class ReservationsController extends Controller
             'ville' => $input["data"]["ville"],
             'pays' => $input["data"]["pays"]
         ]);
-        return redirect('backOffice/reservations');
     }
 }
