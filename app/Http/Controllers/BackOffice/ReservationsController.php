@@ -11,6 +11,7 @@ class ReservationsController extends Controller
     public function index()
     {
         $data["reservations"] = Reservations::all();
+        dd($data["reservations"]);
         return view('backOffice/reservations/index', $data);
     }
     // public function addIndex()
@@ -51,12 +52,16 @@ class ReservationsController extends Controller
     {
         $input = $request->all();
         $reservation = Reservations::create([
-            'titre' => $input["titre"],
-            'description' => $input["description"],
-            'date' => $input["date"],
-            'lieu' => $input["lieu"],
-            'type' => $input["type"],
-            'fini' => $input["fini"]
+            'totalBillets' => $input["data"]["totalBillets"],
+            'totalPrice' => $input["data"]["totalPrice"],
+            'date' => $input["data"]["date"],
+            'prenom' => $input["data"]["prenom"],
+            'nom' => $input["data"]["nom"],
+            'email' => $input["data"]["email"],
+            'adresse' => $input["data"]["adresse"],
+            'codePostal' => $input["data"]["postal"],
+            'ville' => $input["data"]["ville"],
+            'pays' => $input["data"]["pays"]
         ]);
         return redirect('backOffice/reservations');
     }

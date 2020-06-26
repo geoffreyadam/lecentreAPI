@@ -6,26 +6,31 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Ouvert</th>
-                        <th scope="col">Reouverture</th>
-                        <th scope="col">Accès tram</th>
-                        <th scope="col">Accès bus</th>
-                        <th scope="col">Horaires ouvert</th>
-                        <th scope="col">Horaires infos</th>
-                        <th scope="col">Horaires fermé</th>
-                        <th scope="col">Éditer</th>
+                        <th scope="col">Billets</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Dates</th>
+                        <th scope="col">Prenom</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Adresse</th>
+                        <th scope="col">Code Postal</th>
+                        <th scope="col">Ville</th>
+                        <th scope="col">Pays</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($reservations as $reservation)
                         <tr>
-                            <td>{{$reservation->ouvert}}</td>
-                            <td>{{$reservation->reouverture}}</td>
-                            <td>{{$reservation->acces_tram}}</td>
-                            <td>{{$reservation->acces_bus}}</td>
-                            <td>{{$reservation->horaires_ouvert}}</td>
-                            <td>{{$reservation->horaires_plus}}</td>
-                            <td>{{$reservation->horaires_fermé}}</td>
+                            <td>{{$reservation->totalBillets}}</td>
+                            <td>{{$reservation->totalPrice}}</td>
+                            <td>{{$reservation->date}}</td>
+                            <td>{{$reservation->prenom}}</td>
+                            <td>{{$reservation->nom}}</td>
+                            <td>{{$reservation->email}}</td>
+                            <td>{{$reservation->adresse}}</td>
+                            <td>{{$reservation->codePostal}}</td>
+                            <td>{{$reservation->ville}}</td>
+                            <td>{{$reservation->pays}}</td>
                             <td><a href="/backOffice/update/reservations/{{$reservation->id}}" class="btn btn-primary">Éditer</a></td>
                         </tr>
                     @endforeach
