@@ -31,7 +31,6 @@
                             <td>{{$reservation->codePostal}}</td>
                             <td>{{$reservation->ville}}</td>
                             <td>{{$reservation->pays}}</td>
-                            <td><a href="/backOffice/update/reservations/{{$reservation->id}}" class="btn btn-primary">Éditer</a></td>
                         </tr>
                     @endforeach
                 </tbody>
