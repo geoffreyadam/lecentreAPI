@@ -11,7 +11,6 @@ class ReservationsController extends Controller
     public function index()
     {
         $data["reservations"] = Reservations::all();
-        dd($data["reservations"]);
         return view('backOffice/reservations/index', $data);
     }
     // public function addIndex()
