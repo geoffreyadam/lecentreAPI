@@ -29,7 +29,7 @@ Route::get('infos/{token}', 'BackOffice\InfosController@apiGetAll');
 
 Route::get('tarifs/{token}', 'BackOffice\TarifsController@apiGetAll');
 
-Route::post('/backOffice/add/reservations', 'BackOffice\ReservationsController@add');
+Route::post('addreservations/{token}', 'BackOffice\ReservationsController@add');
 
 // Route::get('articles/{token}', 'ArticleController@index');
 // Route::get('postArticle/{token}', 'ArticleController@store');
