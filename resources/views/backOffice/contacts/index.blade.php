@@ -5,9 +5,9 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col  ">Nom</th>
-                    <th scope="col">Prénom</th>
+                    <th scope="col">Nom</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Sujet</th>
                     <th scope="col">Message</th>
                 </tr>
             </thead>
@@ -15,8 +15,8 @@
                 @foreach ($contacts as $contact)
                     <tr>
                         <td>{{$contact->nom}}</td>
-                        <td>{{$contact->prenom}}</td>
                         <td>{{$contact->email}}</td>
+                        <td>{{$contact->prenom}}</td>
                         <td>{{$contact->message}}</td>
                     </tr>
                 @endforeach

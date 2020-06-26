@@ -35,3 +35,7 @@ Route::get('/backOffice/add/tarifs', 'BackOffice\TarifsController@addIndex');
 Route::get('/backOffice/update/tarifs/{id}', 'BackOffice\TarifsController@updateIndex');
 Route::post('/backOffice/updateFunction/tarifs/{id}', 'BackOffice\TarifsController@update');
 Route::post('/backOffice/addFunction/tarifs', 'BackOffice\TarifsController@add');
+
+Route::get('/backOffice/reservations', 'BackOffice\ReservationsController@index');
+Route::get('/backOffice/update/reservations/{id}', 'BackOffice\ReservationsController@updateIndex');
+Route::post('/backOffice/updateFunction/reservations/{id}', 'BackOffice\ReservationsController@update');

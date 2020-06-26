@@ -16,12 +16,12 @@ class CreateInfosTable extends Migration
         Schema::create('infos', function (Blueprint $table) {
             $table->increments("id");
             $table->text('ouvert');
-            $table->text('reouverture');
+            $table->text('reouverture')->nullable();;
             $table->text('acces_tram');
             $table->text('acces_bus');
             $table->text('horaires_fermé');
             $table->text('horaires_ouvert');
-            $table->text('horaires_plus');
+            $table->text('horaires_plus')->nullable();
             $table->timestamps();
         });
     }
